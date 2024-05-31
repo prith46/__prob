@@ -4,6 +4,7 @@ Sample Input: 1 -> 2 -> 4 and 1 -> 3 -> 4
 Sample Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4
 """
 
+
 class Node:
     def __init__(self, value):
         self.value = value
