@@ -43,8 +43,9 @@ class Linkedlist:
         while second:
             if first.value == second.value:
                 first.next = second.next
-                second.next = None
-                second = first.next
+                temp = second
+                second = second.next
+                temp.next = None
                 self.length -= 1
             else:
                 first = first.next
@@ -64,4 +65,3 @@ linked_list.print_list()
 linked_list.remove_duplicate()
 print("After removing duplicates")
 linked_list.print_list()
-
